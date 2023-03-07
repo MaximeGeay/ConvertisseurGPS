@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>692</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>925</width>
+    <height>263</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Convertisseur de Coordonnées GPS</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="rb_DMS">
+         <property name="text">
+          <string>Degrés minutes secondes</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="cb_NS_DMS">
+         <item>
+          <property name="text">
+           <string>N</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>S</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QSpinBox" name="sp_DegLat_DMS">
+         <property name="maximum">
+          <number>89</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="sp_MinLat_DMS">
+         <property name="maximum">
+          <number>59</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QDoubleSpinBox" name="sp_SecLat">
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <double>59.899999999999999</double>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QComboBox" name="cb_EO_DMS">
+         <item>
+          <property name="text">
+           <string>E</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>W</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="7">
+        <widget class="QSpinBox" name="sp_DegLon_DMS">
+         <property name="maximum">
+          <number>179</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8">
+        <widget class="QSpinBox" name="sp_MinLon_DMS">
+         <property name="maximum">
+          <number>59</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="9">
+        <widget class="QDoubleSpinBox" name="sp_SecLon">
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <double>59.899999999999999</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" rowspan="2" colspan="10">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5" rowspan="2">
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QRadioButton" name="rb_DMD">
+         <property name="text">
+          <string>Degrés minutes décimales</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="cb_NS_DMD">
+         <item>
+          <property name="text">
+           <string>N</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>S</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QSpinBox" name="sp_DegLat_DMD">
+         <property name="maximum">
+          <number>89</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="sp_MinLat_DMD">
+         <property name="decimals">
+          <number>6</number>
+         </property>
+         <property name="maximum">
+          <double>59.999999000000003</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QComboBox" name="cb_EO_DMD">
+         <item>
+          <property name="text">
+           <string>E</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>W</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="7">
+        <widget class="QSpinBox" name="sp_DegLon_DMD">
+         <property name="maximum">
+          <number>179</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="sp_MinLon_DMD">
+         <property name="decimals">
+          <number>6</number>
+         </property>
+         <property name="maximum">
+          <double>59.999999000000003</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" rowspan="2" colspan="10">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5" rowspan="2">
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QRadioButton" name="rb_DD">
+         <property name="text">
+          <string>Degrés décimaux</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="4">
+        <widget class="QDoubleSpinBox" name="sp_DegLat_DD">
+         <property name="decimals">
+          <number>10</number>
+         </property>
+         <property name="minimum">
+          <double>-89.999999000000003</double>
+         </property>
+         <property name="maximum">
+          <double>89.999999000000003</double>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="6" colspan="4">
+        <widget class="QDoubleSpinBox" name="sp_DegLon_DD">
+         <property name="decimals">
+          <number>10</number>
+         </property>
+         <property name="minimum">
+          <double>-179.999999000000003</double>
+         </property>
+         <property name="maximum">
+          <double>179.999999000000003</double>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="7" colspan="3">
+        <widget class="QPushButton" name="btn_Convert">
+         <property name="text">
+          <string>Convertir</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+      <zorder>cb_NS_DMS</zorder>
+      <zorder>rb_DD</zorder>
+      <zorder>sp_DegLon_DMS</zorder>
+      <zorder>cb_EO_DMD</zorder>
+      <zorder>sp_MinLon_DMS</zorder>
+      <zorder>sp_DegLon_DMD</zorder>
+      <zorder>rb_DMS</zorder>
+      <zorder>sp_DegLat_DD</zorder>
+      <zorder>sp_DegLon_DD</zorder>
+      <zorder>sp_DegLat_DMD</zorder>
+      <zorder>sp_MinLat_DMD</zorder>
+      <zorder>sp_DegLat_DMS</zorder>
+      <zorder>cb_NS_DMD</zorder>
+      <zorder>sp_MinLon_DMD</zorder>
+      <zorder>rb_DMD</zorder>
+      <zorder>sp_MinLat_DMS</zorder>
+      <zorder>cb_EO_DMS</zorder>
+      <zorder>line</zorder>
+      <zorder>line_2</zorder>
+      <zorder>line_3</zorder>
+      <zorder>sp_SecLat</zorder>
+      <zorder>sp_SecLon</zorder>
+      <zorder>line_4</zorder>
+      <zorder>line_5</zorder>
+      <zorder>btn_Convert</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
